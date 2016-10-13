@@ -13,5 +13,5 @@ services:
   httpServer:
     image: nwik/weightserver
     ports:
-      - "80:3000"
+      - "3080:3000"
   
