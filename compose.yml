@@ -1,0 +1,17 @@
+version: '2'
+services:
+  influx:
+    image: influxdb
+    ports:
+      - "8086:8086"
+      - "8083:8083"
+  grafana:
+    image: grafana/grafana
+    ports:
+      - "3000:3000"
+
+  httpServer:
+    image: nwik/weightserver
+    ports:
+      - "80:3000"
+  
