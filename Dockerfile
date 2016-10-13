@@ -1,4 +1,4 @@
 FROM opensuse
-COPY src/weightServer /
+COPY weightServer /
 
 ENTRYPOINT [ "/weightServer" ]
